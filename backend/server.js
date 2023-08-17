@@ -10,10 +10,11 @@ const app=express();
 app.use(express.json()); 
 app.use(express.urlencoded({extended:false})); 
 app.use(cors({
-    origin: 'https://mern-task-app-9wxc.onrender.com',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: 'https://mern-task-app.onrender.com',
+    // methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    // allowedHeaders: ['Content-Type', 'Authorization']
   }));  
+app.options('*',cors());
 app.use("/api/tasks",taskRoutes); 
 
 const PORT=process.env.PORT || 5000
