@@ -10,7 +10,7 @@ const app=express();
 app.use(express.json()); 
 app.use(express.urlencoded({extended:false})); 
 app.use(cors({
-    origin: 'https://mern-task-app.onrender.com',
+    origin: 'https://mern-task-app-9wxc.onrender.com',
     // methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     // allowedHeaders: ['Content-Type', 'Authorization']
   }));  
