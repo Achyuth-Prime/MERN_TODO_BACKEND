@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false})); 
 app.use(
     cors({
-      origin: ["http://localhost:3000", "https://mern-task-app.onrender.com","http://mern-task-app.onrender.com", "http://mern-task-app-9wxc.onrender.com","https://mern-task-app-9wxc.onrender.com"],
+      origin: ["http://localhost:3000", "https://mern-task-app.onrender.com","http://mern-task-app.onrender.com"],
       credentials: true
     })
   );
