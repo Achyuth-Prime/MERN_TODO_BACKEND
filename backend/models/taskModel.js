@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const taskSchema = mongoose.Schema(
   {
-    name: {
+    title: {
       type: String,
       required: [true, "Please add a task"],
     },
@@ -10,6 +10,11 @@ const taskSchema = mongoose.Schema(
       type: Boolean,
       required: true,
       default: false,
+    },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
+      required: true,
     },
   },
   {
