@@ -20,6 +20,8 @@ app.use(
       "http://mern-task-app.onrender.com",
       "http://mern-task-app-9wxc.onrender.com",
       "https://mern-task-app-9wxc.onrender.com",
+      "http://mern-task-app-five.vercel.app",
+      "https://mern-task-app-five.vercel.app",
     ],
     credentials: true,
   })
